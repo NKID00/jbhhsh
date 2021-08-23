@@ -19,7 +19,6 @@ class JbhhshCli(Cmd):
         result_words, replaced_words = self.jbhhsh.abbreviate_line(line)
 
         print(' ->', join_words(result_words))
-        print()
 
         for key, trans, abbr in replaced_words:
             if key == trans:

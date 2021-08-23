@@ -81,7 +81,7 @@ class Jbhhsh:
             j = len(words)
             for j in range(len(words), i, -1):
                 key = ''.join(words[i:j])
-                result = self.jbhhsh.search(key)
+                result = self.search(key)
                 if len(result) > 0:
                     trans, abbr = choice(list(result.items()))
                     abbr = choice(abbr)

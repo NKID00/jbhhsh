@@ -9,7 +9,7 @@
 启动交互式命令行界面：
 
 ```sh
-$ python3 jbhhsh_cli.py
+$ python3 jbhhsh.py
 ```
 
 ## 构建

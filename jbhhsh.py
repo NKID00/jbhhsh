@@ -6,6 +6,7 @@ from jbhhsh_core import Jbhhsh, join_words
 
 
 class JbhhshCli(Cmd):
+    intro = '直接进行一个句子的输入\nexit可以进行一个程序的退出'
     prompt = '>>> '
 
     def preloop(self):
@@ -31,12 +32,10 @@ class JbhhshCli(Cmd):
 
 def main():
     print('「就不好好说话！」缩写工具')
-    print('版权所有 (c) NKID00 2021')
+    print('进行一个版权的所有 (c) NKID00 2021')
     print('进行一个 MIT 执照的底下（under MIT License')
     print('进行一个结巴分词的初始化...')
-    initialize()  # jieba
-    print('进行一个主的循环...')
-    print('exit可以进行一个程序的退出...')
+    initialize()
     JbhhshCli().cmdloop()
 
 
